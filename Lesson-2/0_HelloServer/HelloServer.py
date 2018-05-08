@@ -21,5 +21,6 @@ class HelloHandler(BaseHTTPRequestHandler):
 
 if __name__ == '__main__':
     server_address = ('', 8000)  # Serve on all addresses, port 8000.
+    print("Your server runs localhost:" , server_address)
     httpd = HTTPServer(server_address, HelloHandler)
     httpd.serve_forever()
